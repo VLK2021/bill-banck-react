@@ -1,0 +1,12 @@
+.layout {
+    padding: 2rem 0 0 0;
+}
+
+.layout-title{
+    margin: 0 0.5rem;
+}
+
+.redux-icon{
+    color: deeppink;
+    font-size: 2rem;
+}

@@ -1,0 +1,20 @@
+.titleComponent{
+
+}
+
+.layout-title{
+    margin: 0 0.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.redux-icon, .react-icon{
+    color: deeppink;
+    font-size: 3rem;
+}
+
+.react-icon{
+    color: darkturquoise;
+}

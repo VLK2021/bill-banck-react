@@ -20,3 +20,32 @@
   justify-content: center;
   align-items: center;
 }
+
+label {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  color: darkblue;
+  margin: 0 0.5rem 0 0;
+}
+
+input, select, button {
+  padding: 0.2rem 0.5rem;
+  font-size: 1.1rem;
+  color: black;
+  font-style: italic;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid saddlebrown;
+}
+
+select, button {
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+
+
+

@@ -1,0 +1,13 @@
+.billComponent {
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+article {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+article > p {
+    margin: 0 0 0 0.5rem;
+}

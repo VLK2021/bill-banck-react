@@ -5,14 +5,14 @@
 .layout-title{
     margin: 0 0.5rem;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: black;
     text-transform: uppercase;
 }
 
 .redux-icon, .react-icon{
     color: deeppink;
-    font-size: 3rem;
+    font-size: 3.3rem;
 }
 
 .react-icon{

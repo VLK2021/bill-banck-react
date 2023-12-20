@@ -2,8 +2,9 @@ import {createSlice} from "@reduxjs/toolkit";
 
 
 const initialState = {
-    currentBillUSD: 0,
-    currentBillUA: 0,
+    currentBill: 0,
+    nameMoney: null,
+    currentGoalLoan: '',
 }
 
 const billSlice = createSlice({
@@ -11,22 +12,25 @@ const billSlice = createSlice({
     initialState,
     reducers: {
         addDeposit: (state, action) => {
-            action.payload.val === 'USD' ?
-                state.currentBillUSD = state.currentBillUSD + Number(action.payload.deposit)
-                : state.currentBillUA = state.currentBillUA + Number(action.payload.deposit)
-
+            if (action.payload.val === state.nameMoney || state.nameMoney === null) {
+                state.currentBill = state.currentBill + Number(action.payload.deposit);
+                state.nameMoney = action.payload.val;
+            }
         },
 
         withdrawDeposit: (state, action) => {
-            action.payload.val === 'USD' ?
-                state.currentBillUSD = state.currentBillUSD - Number(action.payload.withdraw)
-                : state.currentBillUA = state.currentBillUA - Number(action.payload.withdraw)
-        }
+            state.currentBill = state.currentBill - Number(action.payload.withdraw);
+        },
+
+        takeLoan: (state, action) => {
+            state.currentBill = state.currentBill + Number(action.payload.loan);
+            state.currentGoalLoan = action.payload.goalLoan;
+        },
     }
 });
 
-const {actions: {addDeposit, withdrawDeposit}} = billSlice;
-const billActions = {addDeposit, withdrawDeposit};
+const {actions: {addDeposit, withdrawDeposit, takeLoan}} = billSlice;
+const billActions = {addDeposit, withdrawDeposit, takeLoan};
 
 export {billActions};
 export default billSlice.reducer;

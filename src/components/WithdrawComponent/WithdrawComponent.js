@@ -21,11 +21,6 @@ const WithdrawComponent = () => {
                 <label>Withdraw:</label>
                 <input type="number" {...register('withdraw')}/>
 
-                <select {...register('val')}>
-                    <option value={'USD'}>USD</option>
-                    <option value={'UA'}>UA</option>
-                </select>
-
                 <button>withdraw</button>
             </form>
         </div>

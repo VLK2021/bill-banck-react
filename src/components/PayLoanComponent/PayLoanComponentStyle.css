@@ -1,0 +1,9 @@
+.payLoanComponent {
+    margin: 1rem 0;
+}
+
+.payLoanComponent-text{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+}

@@ -24,7 +24,7 @@ const LoanComponent = () => {
 
                 <input type="text"
                        {...register('goalLoan')}
-                    placeholder={'goal loan'}
+                       placeholder={'goal loan'}
                 />
 
                 <button> take loan</button>
